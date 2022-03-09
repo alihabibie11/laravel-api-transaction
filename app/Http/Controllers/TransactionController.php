@@ -20,7 +20,7 @@ class TransactionController extends Controller
         $transaction = Transaction::orderBy('time', 'DESC')->get();
 
         $response = [
-            'message' => '',
+            'message' => 'OK',
             'data' => $transaction
         ];
 
